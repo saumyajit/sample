@@ -3,7 +3,7 @@
 	"id": "mw_cal",
 	"name": "Maintenance Calendar",
 	"version": "1.0",
-	"namespace": "mwcal",
+	"namespace": "MaintenanceCalendar",
 	"author": "Saumyajit Pramanik",
 	"url": "https://www.zabbix.com/",
 	"description": "Zabbix module to display maintenance schedule calendar",

@@ -11,22 +11,19 @@
   * either version 3 of the License, or any later version.
   * However you must not change author and copyright information.
   */
-
-declare(strict_types = 1);
-
 namespace Modules\MaintenanceCalendar;
 
-use APP;
- 
-class Module extends \Zabbix\Core\CModule {
-	public function init(): void {
-		// Initialize main menu (CMenu class instance).
-		APP::Component()->get('menu.main')
-			->findOrAdd(_('Reports'))
-				->getSubmenu()
-     ->add((new \CMenuItem(_('Maintenance Calendar')))
-						->setAction('maintenance.calendar')
-					);
-	}
+use Zabbix\Core\CModule,
+    APP,
+    CMenuItem;
+
+class Module extends CModule {
+    public function init(): void {
+        APP::Component()->get('menu.main')
+            ->findOrAdd(_('Reports'))
+                ->getSubmenu()
+                    ->insertAfter(_('Notification'),
+                        (new CMenuItem(_('Maintenance Calendar')))->setAction('maintenance.calendar')
+                    );
+    }
 }
-?>

@@ -9,8 +9,8 @@
 	"description": "Zabbix module to display maintenance schedule calendar",
   "actions": {
     "maintenance.calendar": {
-      "class": "MaintenanceCalendar",
-      "view": "views.maintenance.calendar"
+      "class": "Actions\\MaintenanceCalendar",
+      "view": "views.module.maintenance.calendar"
     }
   }
 

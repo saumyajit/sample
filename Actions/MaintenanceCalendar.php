@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 namespace Modules\maintenance_calendar\Actions;
 
 use CController;
@@ -22,7 +23,7 @@ class MaintenanceCalendar extends CController {
     private function fetchMaintenanceData() {
         $scheme = isset($_SERVER['REQUEST_SCHEME']) ? $_SERVER['REQUEST_SCHEME'] : 'http';
         $host = $_SERVER['HTTP_HOST'];
-        $apiUrl = "$scheme://$host/api_jsonrpc.php";
+        $apiUrl = "$scheme://$host/zabbix/api_jsonrpc.php";
 
         session_start();
         if (!isset($_SESSION['zbx_session'])) {

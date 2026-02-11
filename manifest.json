@@ -1,16 +1,16 @@
 {
     "manifest_version": 2.0,
-    "id": "mw-cal",
-    "name": "Maintenance Windows Calendar",
-    "version": "1.0.1",
-    "namespace": "MaintenanceCalendar",
+    "id": "",
+    "name": "",
+    "version": "1.0",
+    "namespace": "",
     "author": "Saumyajit Pramanik",
     "url": "https://www.zabbix.com/",
-    "description": "Zabbix module to display maintenance schedule calendar",
+    "description": "",
     "actions": {
         "maintenance.calendar": {
-            "class": "MaintenanceCalendar",
-            "view": "maintenance.calendar"
+            "class": "",
+            "view": ""
         }
     }
 }

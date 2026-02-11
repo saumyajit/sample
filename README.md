@@ -1,1 +1,1 @@
-# zabbix_module_maintenance_calendar
+# this is a sample file
